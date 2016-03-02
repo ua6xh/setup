@@ -31,7 +31,7 @@ RUN sudo apt-get install -y xclip
 
 ## Install Ruby
 # Download the ruby-build code
-RUN \curl -L https://github.com/sstephenson/ruby-build/archive/v20130518.tar.gz | tar -zxvf - -C /tmp/
+RUN curl -L https://github.com/sstephenson/ruby-build/archive/v20130518.tar.gz | tar -zxvf - -C /tmp/
 # Install ruby-build
 RUN cd /tmp/ruby-build-* && ./install.sh && cd / && rm -rfv /tmp/ruby-build-master
 # Install ruby
@@ -54,19 +54,18 @@ RUN sudo apt-get install -y compizconfig-settings-manager
 RUN sudo apt-get install -y -f kcachegrind
 
 #Insall Java
-RUN \
-  echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
-  add-apt-repository -y ppa:webupd8team/java && \
-  apt-get update && \
-  apt-get install -y oracle-java8-installer && \
-  rm -rf /var/lib/apt/lists/* && \
-  rm -rf /var/cache/oracle-jdk8-installer
+RUN  echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
+  sudo add-apt-repository -y ppa:webupd8team/java && \
+  sudo apt-get update && \
+  sudo apt-get install -y oracle-java8-installer && \
+  sudo rm -rf /var/lib/apt/lists/* && \
+  sudo rm -rf /var/cache/oracle-jdk8-installer
 
 
-# Define working directory.
-WORKDIR /data
-
-# Define commonly used JAVA_HOME variable
-ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
-
+## Define working directory.
+#WORKDIR /data
+#
+## Define commonly used JAVA_HOME variable
+#ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
+#
 
