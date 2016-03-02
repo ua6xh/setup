@@ -76,14 +76,14 @@ RUN  echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true
 
 ## Install Ruby
 # Download the ruby-build code
-RUN curl -L https://github.com/sstephenson/ruby-build/archive/v20130518.tar.gz | tar -zxvf - -C /tmp/
-# Install ruby-build
-RUN cd /tmp/ruby-build-* && ./install.sh && cd / && rm -rfv /tmp/ruby-build-master
-# Install ruby
-RUN ruby-build -v 1.9.3-p429 /usr/local
-# Install gems
-RUN gem install bundler rubygems-bundler --no-rdoc --no-ri
-
-# Install tmux
-RUN sudo gem install tmuxinator
-RUN export EDITOR='vim'
+#RUN curl -L https://github.com/sstephenson/ruby-build/archive/v20130518.tar.gz | tar -zxvf - -C /tmp/
+## Install ruby-build
+#RUN cd /tmp/ruby-build-* && ./install.sh && cd / && rm -rfv /tmp/ruby-build-master
+## Install ruby
+#RUN ruby-build -v 1.9.3-p429 /usr/local
+## Install gems
+#RUN gem install bundler rubygems-bundler --no-rdoc --no-ri
+#
+## Install tmux
+#RUN sudo gem install tmuxinator
+#RUN export EDITOR='vim'
