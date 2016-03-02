@@ -1,0 +1,25 @@
+# ~/.tmuxinator/services.yml
+
+name: services
+root: ~/programs/phpProjects/
+
+windows:
+ 
+    - sample_1:
+ 
+        layout: c24e,238x59,0,0[238x29,0,0{59x29,0,0,43,74x29,60,0[74x18,60,0,48,74x10,60,19,52],103x29,135,0[103x14,135,0{51x14,135,0,49,51x14,187,0,57},103x14,135,15{51x14,135,15,51,51x14,187,15,56}]},238x29,0,30{59x29,0,30[59x14,0,30,44,59x14,0,45,47],84x29,60,30,46,93x29,145,30,45}]
+
+        panes:
+ 
+        - 
+        - cd dispatcherfake/; ./dispatcherfake
+        - cd atxxlspreprocessor/web; php -S xlsx:8081 -r .
+        - cd atxstorage; ./storage.py --port=8094
+        - cd sayok/web; php -S sayok:8085 -r .
+        - cd targetproxymock/web; php -S 127.0.0.1:8002 -r .
+        - cd testdata; php -S 127.0.0.1:8090 -r .
+        - 
+        - cd atxbannerprocessortarget/web; php -S bannertarget:8083 -r .
+        - cd atxbannerprocessortarget/web; php -S bannertarget:8089 -r .
+        - cd atxtargetvalidator/web; php -S validator:8086 -r .
+
