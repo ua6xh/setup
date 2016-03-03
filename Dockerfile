@@ -31,8 +31,8 @@ RUN sudo apt-get install -y php5-dev
 RUN sudo apt-get autoremove -y
 
 # Download and install PhpStrom
-#RUN wget -O PhpStrom-133.1777.zip https://googledrive.com/host/0B3OjkjHaHxMYWUpicFctOGl4S1k
-RUN wget -O PhpStrom-133.1777.zip https://googledrive.com/host/0B3OjkjHaHxMYVzg2Qnd6eTBlU2M
+RUN wget -O PhpStrom-133.1777.zip https://googledrive.com/host/0B3OjkjHaHxMYWUpicFctOGl4S1k
+#RUN wget -O PhpStrom-133.1777.zip https://googledrive.com/host/0B3OjkjHaHxMYVzg2Qnd6eTBlU2M
 RUN sudo apt-get install -y unzip
 RUN sudo mkdir /home/work
 RUN sudo unzip PhpStrom-133.1777.zip -d /home/work/

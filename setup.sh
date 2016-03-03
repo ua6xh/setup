@@ -31,8 +31,8 @@
  sudo apt-get autoremove -y
 
 # Download and install PhpStrom
-# wget -O PhpStrom-133.1777.zip https://googledrive.com/host/0B3OjkjHaHxMYWUpicFctOGl4S1k
- wget -O PhpStrom-133.1777.zip https://googledrive.com/host/0B3OjkjHaHxMYVzg2Qnd6eTBlU2M
+ wget -O PhpStrom-133.1777.zip https://googledrive.com/host/0B3OjkjHaHxMYWUpicFctOGl4S1k
+# wget -O PhpStrom-133.1777.zip https://googledrive.com/host/0B3OjkjHaHxMYVzg2Qnd6eTBlU2M
  sudo apt-get install -y unzip
  sudo mkdir /home/work
  sudo unzip PhpStrom-133.1777.zip -d /home/work/
