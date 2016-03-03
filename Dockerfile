@@ -10,7 +10,11 @@ RUN sudo chmod 777 /home/log/
 RUN sudo add-apt-repository -y ppa:eugenesan/ppa
 RUN sudo add-apt-repository -y ppa:tualatrix/ppa
 RUN sudo add-apt-repository -y ppa:gnome-terminator
-RUN sudo add-apt-repository -y ppa:webupd8team/java 
+RUN sudo add-apt-repository -y ppa:webupd8team/java
+RUN sudo add-apt-repository -y main
+RUN sudo add-apt-repository -y universe
+RUN sudo add-apt-repository -y multiverse
+RUN sudo add-apt-repository -y restricted 
 
 # Install google chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
