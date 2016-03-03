@@ -10,7 +10,11 @@
  sudo add-apt-repository -y ppa:eugenesan/ppa
  sudo add-apt-repository -y ppa:tualatrix/ppa
  sudo add-apt-repository -y ppa:gnome-terminator
- sudo add-apt-repository -y ppa:webupd8team/java 
+ sudo add-apt-repository -y ppa:webupd8team/java
+ sudo add-apt-repository -y main
+ sudo add-apt-repository -y universe
+ sudo add-apt-repository -y multiverse
+ sudo add-apt-repository -y restricted
 
 # Install google chrome
  wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -22,7 +26,6 @@
  sudo apt-get install -y vim
 
 ##Install php
-# sudo apt-get update --fix-missing
  sudo apt-get install -y php-pear
  sudo apt-get install -y php5-dev
  sudo apt-get autoremove -y

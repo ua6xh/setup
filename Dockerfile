@@ -14,7 +14,7 @@ RUN sudo add-apt-repository -y ppa:webupd8team/java
 RUN sudo add-apt-repository -y main
 RUN sudo add-apt-repository -y universe
 RUN sudo add-apt-repository -y multiverse
-RUN sudo add-apt-repository -y restricted 
+RUN sudo add-apt-repository -y restricted
 
 # Install google chrome
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -26,7 +26,6 @@ RUN sudo apt-get install -y google-chrome-stable
 RUN sudo apt-get install -y vim
 
 ##Install php
-#RUN sudo apt-get update --fix-missing
 RUN sudo apt-get install -y php-pear
 RUN sudo apt-get install -y php5-dev
 RUN sudo apt-get autoremove -y
