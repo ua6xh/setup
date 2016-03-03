@@ -25,6 +25,12 @@
 # Install vim
  sudo apt-get install -y vim
 
+# Install git
+ sudo apt-get install -y git
+
+# Install dockert
+ sudo apt-get install -y docker
+
 ##Install php
  sudo apt-get install -y php-pear
  sudo apt-get install -y php5-dev

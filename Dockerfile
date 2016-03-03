@@ -25,6 +25,12 @@ RUN sudo apt-get install -y google-chrome-stable
 # Install vim
 RUN sudo apt-get install -y vim
 
+# Install git
+RUN sudo apt-get install -y git
+
+# Install dockert
+RUN sudo apt-get install -y docker
+
 ##Install php
 RUN sudo apt-get install -y php-pear
 RUN sudo apt-get install -y php5-dev
