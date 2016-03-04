@@ -61,7 +61,7 @@
  sudo apt-get install -y postgresql-9.3
 
 # Install Unity tools
- sudo apt-get install -y ubuntu-tweak
+ sudo apt-get install -y ubuntu-tweak >> /home/log/tweak_tools.log
  sudo apt-get install -y compizconfig-settings-manager
 
 #Install mc
@@ -81,6 +81,10 @@
   sudo apt-get install -y oracle-java8-installer && \
   sudo rm -rf /var/lib/apt/lists/* && \
   sudo rm -rf /var/cache/oracle-jdk8-installer
+
+# sudo apt-get install -y update
+# sudo apt-get install -y upgrade
+# sudo reboot
 
 
 ## Define working directory.

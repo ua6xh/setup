@@ -61,7 +61,7 @@ RUN sudo pecl install xdebug >> /home/log/xdebug.log
 RUN sudo apt-get install -y postgresql-9.3
 
 # Install Unity tools
-RUN sudo apt-get install -y ubuntu-tweak
+RUN sudo apt-get install -y ubuntu-tweak >> /home/log/tweak_tools.log
 RUN sudo apt-get install -y compizconfig-settings-manager
 
 #Install mc
@@ -81,6 +81,10 @@ RUN  echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true
   sudo apt-get install -y oracle-java8-installer && \
   sudo rm -rf /var/lib/apt/lists/* && \
   sudo rm -rf /var/cache/oracle-jdk8-installer
+
+#RUN sudo apt-get install -y update
+#RUN sudo apt-get install -y upgrade
+#RUN sudo reboot
 
 
 ## Define working directory.
